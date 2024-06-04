@@ -42,41 +42,41 @@ struct with fields:
 - SecondOrder:3
 - FirstOrderFailSurf:4
 
-### Atmosphere type Variants (atmosType)
+#### Atmosphere type Variants (atmosType)
 - US_STD_ATMOS_76:1
 
-### Equations of Motion Variants (eomType)
+#### Equations of Motion Variants (eomType)
 - STARS:1
 - Simple:2
 
-### Experiment type Variants (expType)
+#### Experiment type Variants (expType)
 - DEFAULT:1
 - ATMX_TURB:2
 - BENCHMARK:3
 - FULL_SIMOUT:4
 
-### Aero/Propulsion Force/Moment model Variants (fmType)
+#### Aero/Propulsion Force/Moment model Variants (fmType)
 Two aero-propulsive model options are available: a low-fidelity, first-principles-based strip-theory model and a mid-fidelity, computationally-derived polynomial model.
 | Option  | Value | Description | Default |
 | ------------- | :-------------: | :------------- | :-------------: |
 | SFunction  | 1  | Contains a matlab class/object based model that allows a user to build an aircraft configuration (airfoil, number and location of rotors, aerodynamic surfaces, etc.). Produces aero-propulsive model predictions throughout the flight envelope | |
 | Polynomial | 2  | Composed of blended response surface equations identified from primarily computational fluid dynamics (CFD) experiments for a generic Lift+Cruise configuration. Limits may be exceeded and result in errors in some corners of the flight envelope when users ask for model predictions in areas that are not characterized by the response surface equations | ✔️|
 
-### Propulsion type Variants (propType)
+#### Propulsion type Variants (propType)
 - None(1)
 - FirstOrder(2)
 - SecondOrder(3) 
 - FirstOrderFailProp(4)
 
-### Sensor type Variants (sensorType)
+#### Sensor type Variants (sensorType)
 - None:1
 - ZOH:2
 
-### Turbulence type Variants (turbType)
+#### Turbulence type Variants (turbType)
 - None:1
 - Enabled:2
 
-### Vehicle type Variants (vehicleType)
+#### Vehicle type Variants (vehicleType)
 - LiftPlusCruise:1
 - Quad6:2
 - GenTiltRotor:3
@@ -85,13 +85,13 @@ Two aero-propulsive model options are available: a low-fidelity, first-principle
 - LA8:6
 - OTHER:7
 
-### Controller type Variants (ctrlType)
+#### Controller type Variants (ctrlType)
 - TRIM:1
 - BASELINE:2
 - BASELINE_L1:3
 - BASELINE_AGI:4
 
-### Reference input type Variants (refInputType)
+#### Reference input type Variants (refInputType)
 | Option  | Value | Description | Default |
 | ------------- | :-------------: | :------------- | :-------------: |
 | FOUR_RAMP   | 1 | Simulink ramp blocks are used to build a simple trajectory. The user makes use of an input structure "target" to provide some basic trim configuration information and then provides timing and magnitude for the ramps blocks using the SimPar structure |  |
