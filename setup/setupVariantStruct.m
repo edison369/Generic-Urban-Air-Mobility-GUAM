@@ -24,8 +24,8 @@
 %         expType: DEFAULT
 %       atmosType: US_STD_ATMOS_76
 %        turbType: None
-%        ctrlType: BASELINE
-%    refInputType: EUTL_TRAJ
+%        ctrlType: BASELINE------------------------------
+%    refInputType: EUTL_TRAJ------------------------------
 %         actType: FirstOrder
 %        propType: None
 %          fmType: SFunction
@@ -104,6 +104,9 @@ end
 path(genpath(vehDir), path);
 SimIn.vehiclepath = sprintf('%s/%s/', rootDir, vehDir);
 
+% -----------------------------------------------------------------
+% THIS SWITCH CASE DOESNT WORK PROPERLY
+% -----------------------------------------------------------------
 % vehicle-specific choices
 switch userStruct.variants.vehicleType
   case VehicleEnum.LiftPlusCruise
