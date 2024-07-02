@@ -90,7 +90,7 @@ Variants of the Sensors Block in the Vehicle Model
 #### Turbulence type Variants (turbType)
 Levels of turbulence intensity. If value different from None the Ubody, Vbody, Wbody turbulence will be increased based on the selected intensity.
 | Option  | Value | Default |
-| :-------------: | :-------------: | :------------- | :-------------: |
+| :-------------: | :-------------: | :-------------: |
 | None | 1 | ✔️ |
 | Light | 2 |  |
 | Moderate | 3 |  |
